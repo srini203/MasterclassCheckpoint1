@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="robot">    
 
-    <material name="white">
+    <!-- <material name="white">
         <color rgba="1 1 1 1"/>
     </material>
 
@@ -19,7 +19,31 @@
     
     <material name="grey">
         <color rgba="0.6 0.6 0.6 1" />
-    </material>
+    </material> -->
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo> 
+
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Orange</material>
+    </gazebo> 
+
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Orange</material>
+    </gazebo> 
+
+    <gazebo reference="front_caster">
+        <material>Gazebo/Blue</material>
+    </gazebo> 
+
+    <gazebo reference="back_caster">
+        <material>Gazebo/Blue</material>
+    </gazebo> 
+
+    <gazebo reference="front_laser">
+        <material>Gazebo/Grey</material>
+    </gazebo> 
 
     <!-- Link - base_footprint -->
     <link name="base_footprint">
