@@ -11,6 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   urdf
   xacro
+  gazebo_plugins
+  gazebo_ros
+  roscpp
 )
 
 ## System dependencies are found with CMake's conventions
